@@ -5,7 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    "build-all": "ng build @me/lib-a && ng build @me/lib-b",
+    "test": "jest --coverage",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
@@ -24,10 +25,16 @@
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "~0.901.0",
+    "@angular-devkit/build-ng-packagr": "~0.901.0",
     "@angular/cli": "~9.1.0",
     "@angular/compiler-cli": "~9.1.0",
     "@angular/language-service": "~9.1.0",
+    "@types/jest": "^25.2.1",
     "@types/node": "^12.11.1",
+    "jest": "^25.2.7",
+    "jest-preset-angular": "^8.1.3",
+    "ng-packagr": "^9.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.8.3"

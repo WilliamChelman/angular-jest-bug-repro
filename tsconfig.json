@@ -11,10 +11,11 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
-    "lib": [
-      "es2018",
-      "dom"
-    ]
+    "lib": ["es2018", "dom"],
+    "paths": {
+      "@me/lib-a": ["dist/me/lib-a/me-lib-a", "dist/me/lib-a"],
+      "@me/lib-b": ["dist/me/lib-b/me-lib-b", "dist/me/lib-b"]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
